@@ -1,0 +1,12 @@
+8.0
+6.0
+42.0
+32.0
+5.0
+Error: Division by zero is undefined!
+NaN
+1.0
+Error: Modulus by zero!
+NaN
+3.0
+10.0

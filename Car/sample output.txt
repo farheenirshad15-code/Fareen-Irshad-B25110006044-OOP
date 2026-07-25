@@ -1,0 +1,28 @@
+BMW: Cannot accelerate! Engine is OFF.
+BMW engine started.
+BMW accelerated. Current Speed: 20 km/h
+BMW accelerated. Current Speed: 40 km/h
+BMW: TURBO MODE ACTIVATED! Speed boosted to 90 km/h!
+Tesla engine started.
+Tesla accelerated. Current Speed: 20 km/h
+--- BMW State ---
+Color: Black
+Speed: 90 km/h
+Engine On: true
+Fuel Level: 90%
+Turbo Mode: true
+
+--- Tesla State ---
+Color: Red
+Speed: 20 km/h
+Engine On: true
+Fuel Level: 95%
+Turbo Mode: false
+
+BMW engine stopped. Speed reset to zero.
+--- BMW State ---
+Color: Black
+Speed: 0 km/h
+Engine On: false
+Fuel Level: 90%
+Turbo Mode: false

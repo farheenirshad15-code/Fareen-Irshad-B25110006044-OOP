@@ -1,0 +1,31 @@
+* File: Main.java
+ * Purpose: Creates two independent Car objects and tests normal + edge cases.
+ */
+public class Main {
+    public static void main(String[] args) {
+            // Stack: bmw, tesla are reference variables
+        // Heap: each 'new Car()' creates a separate object
+        Car bmw = new Car();
+        Car tesla = new Car();
+
+        bmw.setDetails("BMW", "Black");
+        tesla.setDetails("Tesla", "Red");
+
+        bmw.accelerate(); 
+        bmw.startEngine();
+        bmw.accelerate();
+        bmw.accelerate();
+        bmw.enableTurbo(); 
+
+                // Normal case: start engine then accelerate
+
+        tesla.startEngine();
+        tesla.accelerate();
+
+        bmw.displayState();
+        tesla.displayState();
+
+        bmw.stopEngine();
+        bmw.displayState();
+    }
+}
