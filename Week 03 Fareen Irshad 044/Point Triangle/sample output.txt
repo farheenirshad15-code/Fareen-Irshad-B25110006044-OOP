@@ -1,0 +1,14 @@
+===== POINT DEMO =====
+First Point: (3.0, 4.0)
+Second Point: (5.0, 2.0)
+Addition: (8.0, 6.0)
+Subtraction: (-2.0, 2.0)
+Copied Point: (3.0, 4.0)
+Changed Copy: (100.0, 200.0)
+Original Point: (3.0, 4.0)
+
+===== TRIANGLE DEMO =====
+Triangle: Triangle{p1=(0.0, 0.0), p2=(4.0, 0.0), p3=(0.0, 3.0)}
+Perimeter: 12.00
+Area: 6.00
+Type: Scalene

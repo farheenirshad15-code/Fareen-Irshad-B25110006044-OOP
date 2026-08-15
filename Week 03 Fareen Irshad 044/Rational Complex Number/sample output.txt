@@ -1,0 +1,19 @@
+===== COMPLEX NUMBER DEMO =====
+c1 = 7.0 + 3.0i
+c2 = 2.0 - 5.0i
+Addition = 9.0 - 2.0i
+Subtraction = 5.0 + 8.0i
+Multiplication = 29.0 - 29.0i
+Copy after setters = 10.0 + 8.0i
+Original c1 = 7.0 + 3.0i
+
+===== RATIONAL NUMBER DEMO =====
+r1 (simplified) = 2/3
+r2 = -5/12
+Addition = 1/4
+Subtraction = 13/12
+Copied rational = 2/3
+Copy after setters = 2/3
+Original r1 = 2/3
+Zero numerator case = 0
+Zero denominator validation: Denominator cannot be zero.
