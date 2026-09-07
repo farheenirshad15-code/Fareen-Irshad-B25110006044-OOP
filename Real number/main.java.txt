@@ -1,0 +1,42 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Default constructor
+        RealNumber r1 = new RealNumber();
+
+        // Parameterized constructor
+        RealNumber r2 = new RealNumber(4, 8);
+
+        // Another RealNumber
+        RealNumber r3 = new RealNumber(2, 3);
+
+        // Copy constructor
+        RealNumber r4 = new RealNumber(r2);
+
+        // Display values
+        System.out.println("Default: " + r1);
+        System.out.println("Parameterized: " + r2);
+        System.out.println("Copy: " + r4);
+
+        // Addition
+        RealNumber sum = r2.add(r3);
+        System.out.println("Addition: " + sum);
+// Subtraction
+        RealNumber difference = r2.subtract(r3);
+        System.out.println("Subtraction: " + difference);
+
+        // Getters
+        System.out.println("Numerator of r2: " + r2.getNumerator());
+        System.out.println("Denominator of r2: " + r2.getDenominator());
+
+        // Setters
+        r1.setNumerator(10);
+        r1.setDenominator(20);
+
+        System.out.println("After setters: " + r1);
+
+        // Fraction to String
+        System.out.println("Fraction as String: " + r3.fractionToString());
+    }
+}

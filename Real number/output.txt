@@ -1,0 +1,10 @@
+Expected Output
+Default: 0
+Parameterized: 1/2
+Copy: 1/2
+Addition: 7/6
+Subtraction: -1/6
+Numerator of r2: 1
+Denominator of r2: 2
+After setters: 1/2
+Fraction as String: 2/3
