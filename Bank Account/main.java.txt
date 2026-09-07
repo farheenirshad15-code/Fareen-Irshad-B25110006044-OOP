@@ -1,0 +1,63 @@
+```java
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Default constructor
+        BankAccount account1 = new BankAccount();
+
+        // Parameterized constructor
+        BankAccount account2 =
+                new BankAccount("1001", "Ali", 5000);
+
+        // Another account
+        BankAccount account3 =
+                new BankAccount("1002", "Ahmed", 3000);
+
+        // Copy constructor
+        BankAccount account4 =
+                new BankAccount(account2);
+
+        // Display accounts
+        System.out.println("Account 1:");
+        System.out.println(account1);
+
+        System.out.println("\nAccount 2:");
+        System.out.println(account2);
+
+        System.out.println("\nAccount 3:");
+        System.out.println(account3);
+
+        System.out.println("\nCopied Account:");
+        System.out.println(account4);
+
+        // Deposit
+        account2.deposit(1000);
+
+        // Withdraw
+        account2.withdraw(500);
+
+        // Transfer
+        account2.transfer(account3, 1000);
+
+        System.out.println("\nAfter Transactions:");
+
+        System.out.println("\nAccount 2:");
+        System.out.println(account2);
+
+        System.out.println("\nAccount 3:");
+        System.out.println(account3);
+
+        // Getter
+        System.out.println("\nAccount 2 Balance: "
+                + account2.getBalance());
+
+        // Setter
+        account1.setAccountHolderName("Hassan");
+        account1.setBalance(2000);
+
+        System.out.println("\nAccount 1 after setters:");
+        System.out.println(account1);
+    }
+}
+```
