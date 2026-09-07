@@ -1,0 +1,4 @@
+Output
+Student ID: 101
+Result: 5
+Finally executed

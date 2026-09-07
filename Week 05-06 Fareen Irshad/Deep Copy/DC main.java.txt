@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+
+        int[] marks = {80, 90, 70};
+
+        Student s1 = new Student("Ali", marks);
+        Student s2 = new Student(s1);
+
+        s2.marks[0] = 50;
+
+        System.out.println(s1.marks[0]);
+        System.out.println(s2.marks[0]);
+    }
+}

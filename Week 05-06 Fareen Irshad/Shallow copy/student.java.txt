@@ -1,0 +1,16 @@
+class Student {
+    String name;
+    int[] marks;
+
+    // Parameterized constructor
+    Student(String name, int[] marks) {
+        this.name = name;
+        this.marks = marks;
+    }
+
+    // Shallow Copy Constructor
+    Student(Student s) {
+        this.name = s.name;
+        this.marks = s.marks;   // same array reference
+    }
+}
