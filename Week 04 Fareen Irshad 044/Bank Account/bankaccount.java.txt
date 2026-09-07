@@ -1,0 +1,100 @@
+```java
+public class BankAccount {
+
+    // Private attributes
+    private String accountNumber;
+    private String accountHolderName;
+    private double balance;
+
+    // Default constructor
+    public BankAccount() {
+        accountNumber = "0000";
+        accountHolderName = "Unknown";
+        balance = 0.0;
+    }
+
+    // Parameterized constructor
+    public BankAccount(String accountNumber, String accountHolderName,
+                       double balance) {
+        this.accountNumber = accountNumber;
+        this.accountHolderName = accountHolderName;
+        this.balance = balance;
+    }
+
+    // Copy constructor
+    public BankAccount(BankAccount other) {
+        this.accountNumber = other.accountNumber;
+        this.accountHolderName = other.accountHolderName;
+        this.balance = other.balance;
+    }
+
+    // Getter for account number
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    // Setter for account number
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    // Getter for account holder name
+    public String getAccountHolderName() {
+        return accountHolderName;
+    }
+
+    // Setter for account holder name
+    public void setAccountHolderName(String accountHolderName) {
+        this.accountHolderName = accountHolderName;
+    }
+
+    // Getter for balance
+    public double getBalance() {
+        return balance;
+    }
+
+    // Setter for balance
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    // Deposit method
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance = balance + amount;
+        }
+    }
+
+    // Withdraw method
+    public void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance = balance - amount;
+        } else {
+            System.out.println("Invalid withdrawal.");
+        }
+    }
+
+    // Private helper method
+    private boolean hasSufficientBalance(double amount) {
+        return amount <= balance;
+    }
+
+    // Transfer money to another account
+    public void transfer(BankAccount other, double amount) {
+        if (amount > 0 && hasSufficientBalance(amount)) {
+            this.balance = this.balance - amount;
+            other.balance = other.balance + amount;
+        } else {
+            System.out.println("Transfer failed.");
+        }
+    }
+
+    // Convert object information to String
+    @Override
+    public String toString() {
+        return "Account Number: " + accountNumber
+                + "\nAccount Holder: " + accountHolderName
+                + "\nBalance: " + balance;
+    }
+}
+```
